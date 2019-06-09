@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import './index.less';
+import Board from '@/components/board';
 
-
-ReactDOM.render(
-    <div className="main">hello world</div>,
+render(
+    <div className="main">
+        <Board text={ 'i am ' }/>
+    </div>,
     document.getElementById('root')
 );
